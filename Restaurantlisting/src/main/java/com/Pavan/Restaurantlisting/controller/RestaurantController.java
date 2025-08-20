@@ -64,7 +64,7 @@ public class RestaurantController {
         if (restaurantService.deleteRestaurantById(id)) {
             return ResponseEntity.noContent().build();
         }
-        throw new RestaurantNotFoundException("Restaurant IS NOT FOUND WIHT THE CURRENT " + id);
+        throw new RestaurantNotFoundException("Restaurant IS NOT FOUND  " + id);
     }
 
     // Search by city: GET /restaurants/city/{city}
